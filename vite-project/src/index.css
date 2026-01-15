@@ -1,10 +1,22 @@
 @import "tailwindcss";
 
+@theme {
+    --color-background: hsl(var(--background));
+    --color-foreground: hsl(var(--foreground));
+    --color-primary: hsl(var(--primary));
+}
+
 @layer base {
 
-  html {
-    @apply scroll-smooth;
-  }
+    :root {
+        --background: 330 50% 98%;
+        --foreground: 340 80% 70%;
+        --primary: 330 15% 15%; 
+    }
+
+    html {
+        @apply scroll-smooth;
+    }
 
 }
 
